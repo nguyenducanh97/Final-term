@@ -1,0 +1,125 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<div class="layout-px-spacing">
+
+  <h2>Name: Nguyen Duc Anh</h2>
+  <h2>ID: 2021712226</h2>
+
+  <div class="middle-content container-xxl p-0">
+
+      <div class="row layout-top-spacing">
+
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+              <div class="widget widget-chart-three">
+                <div class="widget-heading">
+                  <h5 class="value">Graphic design</h5>
+                </div>
+                  <div class="widget-content">
+                    <img src="{{ url_for('static', filename = 'src/assets/img/chart-1.jpg') }}">
+
+                  </div>
+              </div>
+              
+          </div>
+
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+            <div class="widget widget-chart-three">
+              <div class="widget-heading">
+                <h5 class="value">Population affected by aqueous arsenic </h5>
+              </div>
+                <div class="widget-content">
+                  <div id="donut-chart" class=""></div>
+                </div>
+            </div>
+          </div> 
+          
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+            <div class="widget widget-chart-three">
+              <div class="widget-heading">
+                <h5 class="value">Final nutrient against time (day) </h5>
+              </div>
+                <div class="widget-content">
+                  <div id="column-chart" class=""></div>
+                </div>
+            </div>
+          </div> 
+
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+            <div class="widget widget-chart-three">
+              <div class="widget-heading">
+                <h5 class="value">Toxicity of aqueous arsenic species </h5>
+              </div>
+                <div class="widget-content">
+                  <div class="table-responsive">
+                    <table class="table table-hover table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">As species</th>
+                                <th scope="col">LD50 (g/kg)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Arsine</td>
+                                <td>0.003</td>
+                            </tr>
+                            <tr>
+                              <td>Arsenite</td>
+                              <td>0.014</td>
+                            </tr>
+                            <tr>
+                              <td>Arsenate</td>
+                              <td>0.02</td>
+                            </tr>
+                            <tr>
+                              <td>(Di,Tri)-methyl arsine </td>
+                              <td>7.87</td>
+                            </tr>
+                            <tr>
+                              <td>Methylarsonic acid</td>
+                              <td>0.7-1.8</td>
+                            </tr>
+                            <tr>
+                              <td>Dimethylarsinic acid</td>
+                              <td>0.7-2.6</td>
+                            </tr>
+                            <tr>
+                              <td>Trimethylarsine oxide</td>
+                              <td>10</td>
+                            </tr>
+                            <tr>
+                              <td>Tetramethylarsonium ion</td>
+                              <td>0.89</td>
+                            </tr>
+                            <tr>
+                              <td>Arsenocholine</td>
+                              <td>10</td>
+                            </tr>
+                            <tr>
+                              <td>Arsenobetaine</td>
+                              <td>10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+            </div>
+          </div> 
+
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+            <div class="widget widget-chart-three">
+              <div class="widget-heading">
+                <h5 class="value">Water volume against time</h5>
+              </div>
+                <div class="widget-content">
+                  <div id="line-chart-timeseries" class=""></div>
+                </div>
+            </div>
+          </div> 
+
+      </div>
+
+  </div>
+
+</div>
+{% endblock %}
